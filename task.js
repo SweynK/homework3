@@ -159,9 +159,26 @@ Task 6 :
 let array1 = [1, 2, 3];
 let array2 = [2, 30, 1];
 
-შედეგი უნდა იყოს : [1,1,2,2,3,30]
+შედეგი უნდა იყოს : [1,2,3,30]
 
 */
+let array1 = [1, 2, 3];
+let array2 = [2, 30, 1];
+let mergedArr = array1.concat(array2);
+
+
+function noneDublicatedArr(){
+  let result = [];
+  for(let i = 0; i < mergedArr.length; i++){
+    if(!result.includes(mergedArr[i])){
+      result.push(mergedArr[i])
+    }
+  }
+  return result;
+}
+console.log(noneDublicatedArr());
+
+
 
 /*
 Task 7 : 
