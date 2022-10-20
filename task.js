@@ -188,7 +188,9 @@ Task 7 :
 */
 
 function readyToPutInTheDOM(arr) {
-  // your code here
+  return arr.map((el)=>{
+    return `<h1>${el.name}</h1><h2>${el.age}</h2>`
+  })
 }
 console.log(
   readyToPutInTheDOM([
